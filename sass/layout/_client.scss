@@ -1,0 +1,26 @@
+.client {
+  display: flex;
+  justify-content: center;
+}
+
+.client__item + .client__item {
+  margin-left: 30px;
+}
+
+.client__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $border-client;
+  border-radius: 4px;
+  color: $icon;
+  fill: currentColor;
+  @include transition-two(fill, border-color);
+  &:focus,
+  &:hover {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
+}

@@ -1,0 +1,30 @@
+.section--no-padding-top {
+  padding-top: 0;
+}
+
+.work {
+  display: flex;
+  margin-left: -30px;
+}
+
+.work__item {
+  position: relative;
+  margin-left: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.work__descr {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 27px 0px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  background-color: rgba(47, 48, 58, 0.8);
+}

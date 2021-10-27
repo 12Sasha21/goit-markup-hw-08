@@ -1,0 +1,12 @@
+.header {
+  width: 100%;
+  background-color: $primary-white-color;
+  border-bottom: 1px solid $border;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
