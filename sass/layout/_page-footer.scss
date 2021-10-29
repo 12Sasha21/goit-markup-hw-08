@@ -5,16 +5,30 @@
 }
 
 .container--footer {
-  display: block;
-  text-align: center;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
   // display: flex;
-  // align-items: baseline;
 }
 
 .footer__box {
-  margin-bottom: 60px;
-  // margin-right: 70px;
-  // flex-grow: 1;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-left: 76px;
+    margin-right: 165px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .footer__title {
@@ -28,7 +42,15 @@
 }
 
 .footer__social {
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .social__link--footer {
@@ -44,20 +66,29 @@
 }
 
 .subscrib {
-  // margin-left: 93px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+    width: 450px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-grow: 1;
+  }
 }
 
 .subscrib__block {
-  // display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .subscrib__input {
+  width: 100%;
   padding: 15px 16px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   outline: none;
   background: none;
-  // margin-right: 12px;
   color: $primary-white-color;
   &:focus {
     border-color: $accent-color;
@@ -68,6 +99,9 @@
     letter-spacing: 0.03em;
   }
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
 }
 
 .subscrib__icon {
@@ -76,9 +110,12 @@
 
 .footer__button {
   @extend %button;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 50px;
   padding: 10px 28px;
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto;
+  }
 }

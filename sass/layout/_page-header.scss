@@ -1,4 +1,6 @@
 .header {
+  background-color: $primary-white-color;
+  border-bottom: 1px solid $border;
   @media screen and (max-width: 767px) {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -8,8 +10,6 @@
     padding-bottom: 20px;
   }
   @media screen and (min-width: 1200px) {
-    background-color: $primary-white-color;
-    border-bottom: 1px solid $border;
     padding-top: 24px;
     padding-bottom: 25px;
   }
@@ -52,7 +52,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
     width: 100vw;
     height: 100vh;
     padding: 48px 40px;
@@ -136,7 +135,7 @@
     flex-direction: column-reverse;
     margin-left: 84px;
   }
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
     margin-left: 305px;

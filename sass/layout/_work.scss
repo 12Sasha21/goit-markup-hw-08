@@ -1,4 +1,7 @@
-.section--no-padding-top {
+.section-work {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   padding-top: 0;
 }
 
