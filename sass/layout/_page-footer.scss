@@ -5,15 +5,17 @@
 }
 
 .container--footer {
-  display: flex;
-  align-items: baseline;
+  display: block;
+  text-align: center;
+  // display: flex;
+  // align-items: baseline;
 }
 
 .footer__box {
-  margin-right: 70px;
-  flex-grow: 1;
+  margin-bottom: 60px;
+  // margin-right: 70px;
+  // flex-grow: 1;
 }
-
 
 .footer__title {
   font-weight: 700;
@@ -23,6 +25,10 @@
   text-transform: uppercase;
   color: $primary-white-color;
   margin-bottom: 20px;
+}
+
+.footer__social {
+  margin-bottom: 60px;
 }
 
 .social__link--footer {
@@ -36,29 +42,32 @@
 .social__icon--footer {
   fill: $primary-white-color;
 }
+
 .subscrib {
-  margin-left: 93px;
+  // margin-left: 93px;
 }
 
 .subscrib__block {
-  display: flex;
+  // display: flex;
 }
 
 .subscrib__input {
-  width: 358px;
   padding: 15px 16px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   outline: none;
   background: none;
-  margin-right: 12px;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  // margin-right: 12px;
   color: $primary-white-color;
   &:focus {
     border-color: $accent-color;
   }
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
+  margin-bottom: 20px;
 }
 
 .subscrib__icon {
@@ -67,6 +76,7 @@
 
 .footer__button {
   @extend %button;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;

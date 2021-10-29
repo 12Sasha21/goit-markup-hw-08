@@ -11,7 +11,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -21,40 +21,77 @@
         <a lang="en" href="index.html" class="logo logo__header"
           ><span class="logo__blue">Web</span>Studio</a
         >
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link nav__link--current" href="index.html"
-                >Студия</a
-              >
+        <button
+          type="button"
+          class="header__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <div class="menu js-menu-container" id="mobile-menu">
+          <button type="button" class="header__button js-close-menu" >
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-close40px"></use>
+            </svg>
+          </button>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link nav__link--current" href="index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="portfolio.html">Портфолио</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="contacts">
+             <li class="contacts__item">
+              <a class="contacts__link" href="tel:+380961111111">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="portfolio.html">Портфолио</a>
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>           
+          </ul>
+
+          <ul class="social-header">
+            <li class="social-header__item">
+              <a class="social-header__link" href="">Instagram</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="">Контакты</a>
+            <li class="social-header__item">
+              <a class="social-header__link" href="">Twitter</a>
+            </li>
+            <li class="social-header__item">
+              <a class="social-header__link" href="">Facebook</a>
+            </li>
+            <li class="social-header__item">
+              <a class="social-header__link" href="">Linkedin</a>
             </li>
           </ul>
-        </nav>
-
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -112,7 +149,7 @@
               </p>
             </li>
             <li class="features__item icon-astronaut">
-              <div class="features__box">   
+              <div class="features__box">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -128,7 +165,7 @@
       </section>
 
       <!--Чем мы занимаемся-->
-      <section class="section section--no-padding-top">
+      <!-- <section class="section section--no-padding-top">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="work">
@@ -161,7 +198,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--Наша команда-->
       <section class="section section--second-background">
@@ -169,12 +206,7 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img
-                src="./images/imgid.jpg"
-                alt="фото:Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <img src="./images/imgid.jpg" alt="фото:Игорь Демьяненко" />
               <div class="team__box">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p lang="en" class="team__descr">Product Designer</p>
@@ -212,12 +244,7 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/imgor.jpg"
-                alt="фото:Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <img src="./images/imgor.jpg" alt="фото:Ольга Репина" />
               <div class="team__box">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p lang="en" class="team__descr">Frontend Developer</p>
@@ -255,12 +282,7 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/imgnt.jpg"
-                alt="фото:Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <img src="./images/imgnt.jpg" alt="фото:Николай Тарасов" />
               <div class="team__box">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p lang="en" class="team__descr">Marketing</p>
@@ -299,10 +321,9 @@
 
             <li class="team__item">
               <img
+                class="team__img"
                 src="./images/imgme.jpg"
                 alt="фото:Михаил Ермаков"
-                width="270"
-                height="260"
               />
               <div class="team__box">
                 <h3 class="team__title">Михаил Ермаков</h3>
@@ -567,5 +588,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>
