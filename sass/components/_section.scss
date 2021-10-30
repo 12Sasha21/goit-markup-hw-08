@@ -1,20 +1,12 @@
-// .section {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
-// .section__title {
-//   font-weight: 700;
-//   font-size: 36px;
-//   line-height: 1.16;
-//   text-align: center;
-//   letter-spacing: 0.03em;
-//   color: $title-text-color;
-//   margin-bottom: 50px;
-// }
+
 .section__title {
   font-weight: 700;
   font-size: 28px;
@@ -23,4 +15,9 @@
   letter-spacing: 0.03em;
   color: $title-text-color;
   margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
