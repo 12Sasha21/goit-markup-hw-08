@@ -1,11 +1,15 @@
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: calc(28 / 24);
   letter-spacing: 0.03em;
   color: #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  @media screenand (min-width: 1200px) {
+    font-size: 26px;
+    line-height: calc(31 / 26);
+  }
 }
 
 .logo__blue {
