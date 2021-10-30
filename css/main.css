@@ -557,12 +557,23 @@ body {
 
 .contacts__icon {
   fill: currentColor;
-  margin-right: 8px;
 }
 
 @media screen and (max-width: 767px) {
   .contacts__icon {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts__icon {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__icon {
+    margin-right: 10px;
   }
 }
 
