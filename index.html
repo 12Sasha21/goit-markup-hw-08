@@ -18,24 +18,27 @@
     <header class="header">
       <div class="container header__container">
         <a lang="en" href="index.html" class="logo logo__header"
-          ><span class="logo__blue">Web</span>Studio</a>
+          ><span class="logo__blue">Web</span>Studio</a
+        >
         <button
           type="button"
           class="header__button js-open-menu"
           aria-expanded="false"
-          aria-controls="mobile-menu">
+          aria-controls="mobile-menu"
+        >
           <svg
             width="40"
             height="40"
-            aria-label="Переключатель мобильного меню">
+            aria-label="Переключатель мобильного меню"
+          >
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
 
         <div class="menu js-menu-container" id="mobile-menu">
-          <button type="button" class="header__button js-close-menu" >
+          <button type="button" class="header__button js-close-menu">
             <svg width="40" height="40">
-              <use href="./images/icons.svg#icon-close40px"></use>
+              <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
           <nav class="nav">
@@ -55,7 +58,7 @@
           </nav>
 
           <ul class="contacts">
-             <li class="contacts__item">
+            <li class="contacts__item">
               <a class="contacts__link" href="tel:+380961111111">
                 <svg class="contacts__icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>
@@ -70,7 +73,7 @@
                 </svg>
                 info@devstudio.com
               </a>
-            </li>           
+            </li>
           </ul>
 
           <ul class="social-header">
@@ -202,7 +205,29 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img src="./images/imgid.jpg" alt="фото:Игорь Демьяненко" />
+              <picture>
+                <source
+                  srcset="
+                  ./images/mobile/igor.jpg    1x, 
+                  ./images/mobile/igor@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/igor.jpg    1x,
+                    ./images/tablet/igor@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/desctop/igor.jpg    1x,
+                    ./images/desctop/igor@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/igor.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <div class="team__box">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p lang="en" class="team__descr">Product Designer</p>
@@ -240,7 +265,27 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/imgor.jpg" alt="фото:Ольга Репина" />
+              <picture>
+                <source
+                  srcset="./images/olga.jpg 1x, ./images/olga@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/olga.jpg    1x,
+                    ./images/tablet/olga@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/desctop/olga.jpg    1x,
+                    ./images/desctop/olga@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/olga.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <div class="team__box">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p lang="en" class="team__descr">Frontend Developer</p>
@@ -278,7 +323,27 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/imgnt.jpg" alt="фото:Николай Тарасов" />
+              <picture>
+                <source
+                  srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/igor.jpg    1x,
+                    ./images/tablet/igor@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/desctop/igor.jpg    1x,
+                    ./images/desctop/igor@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./image/igor.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <div class="team__box">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p lang="en" class="team__descr">Marketing</p>
@@ -316,11 +381,27 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/imgme.jpg"
-                alt="фото:Михаил Ермаков"
-              />
+              <picture>
+                <source
+                  srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/igor.jpg    1x,
+                    ./images/tablet/igor@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/desctop/igor.jpg    1x,
+                    ./images/desctop/igor@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./image/igor.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <div class="team__box">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p lang="en" class="team__descr">UI Designer</p>
@@ -414,7 +495,7 @@
     </main>
 
     <!--Подвал-->
-<footer class="footer">
+    <footer class="footer">
       <div class="container container--footer">
         <div class="footer__box">
           <a class="logo logo__footer" href="/"
