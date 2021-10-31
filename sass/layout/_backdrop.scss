@@ -11,4 +11,7 @@
     visibility: hidden;
     pointer-events: none;
   }
+  @media screen and (max-width: 767px) {
+  padding: 93px 15px;
+  }
 }

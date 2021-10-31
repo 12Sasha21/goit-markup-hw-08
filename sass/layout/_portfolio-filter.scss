@@ -13,11 +13,18 @@
   }
 }
 .filter__item {
-  &:not(:last-child) {
-    margin-right: 8px;
+  margin-right: 8px;
+  &:nth-child(3) {
+    margin-right: 0px;
+  }
+  &:last-child {
+    margin-right: 0px;
   }
   @media screen and (max-width: 767px) {
     margin-bottom: 15px;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
   }
 }
 
