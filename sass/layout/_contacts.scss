@@ -74,3 +74,17 @@
     margin-right: 10px;
   }
 }
+
+.contacts__icon--mail {
+  @media screen and (max-width: 1199px) {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+.contacts__icon--smartphone {
+  @media screen and (max-width: 1199px) {
+    width: 10px;
+    height: 14px;
+  }
+}

@@ -636,6 +636,20 @@ body {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .contacts__icon--mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts__icon--smartphone {
+    width: 10px;
+    height: 14px;
+  }
+}
+
 .hero {
   background-color: #2f303a;
   padding-top: 118px;
@@ -962,24 +976,22 @@ body {
   }
 }
 
-.filter__item {
-  margin-right: 8px;
-}
-
-.filter__item:nth-child(3) {
-  margin-right: 0px;
-}
-
-.filter__item:last-child {
-  margin-right: 0px;
-}
-
 @media screen and (max-width: 767px) {
   .filter__item {
+    margin-right: 8px;
     margin-bottom: 15px;
+  }
+  .filter__item:nth-child(1n + 2) {
+    margin-right: 0px;
   }
   .filter__item:nth-last-child(-n + 2) {
     margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter__item:not(:last-child) {
+    margin-right: 8px;
   }
 }
 
